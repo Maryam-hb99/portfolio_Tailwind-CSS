@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maryam Hbab</title>
+    <link href="/src/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-background overflow-x-hidden">
+    <!-- header -->
+    <header
+      class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5 order-[10001]"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            class="text-white font-bold text-lg flex items-center gap-3"
+            ><img src="src/img/Logo.svg" alt="" class="w-8 h-8" /> Portfolio</a
+          >
+          <!-- only for large device -->
+          <div class="hidden md:flex space-x-10">
+            <a href="#home" class="text-primary hover:text-gray-300">Home</a>
+            <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
+            <a href="src/CV_MARYAM HBAB.pdf" class="text-white hover:text-gray-300">Resume</a>
+          </div>
+          <!-- menu btn, only disply on mobile -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white text-2xl">
+              <i class="bx bx-menu"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <a href="#home" class="block text-white py-2 mt-3 hover:bg-gray-700"
+            >Home</a
+          >
+          <a href="#projects" class="block text-white py-2 hover:bg-gray-700"
+            >Projects</a
+          >
+          <a href="#resume" class="block text-white py-2 hover:bg-gray-700">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner section -->
+    <section class="max-w-7xl mx-auto px-5 my-12" id="home">
+      <div
+        class="flex md:flex-row flex-col justify-between items-center text-white gap-4 py-10"
+      >
+        <div class="md:w-1/2">
+          <p class="text-xl font-medium mb-4">
+            Hello, <span class="text-primary">I'm</span>
+          </p>
+          <h1 class="font-bold text-4xl tracking-[3.22px] mb-5">Maryam Hbab</h1>
+          <p class="text-2xl font-montserrat mb-5">
+            GIS Analyst and Developer
+          </p>
+          <p class="text-xl mb-12 md:w-3/4 text-justify leading-8">
+            I have a passion for everything related to GIS, Remote Sensing, and Web Development. This portfolio showcases my professional work and experience
+          </p>
+          <a href="#skills">
+            <button class="py-4 px-10 rounded-md bg-primary text-white font-bold">
+              Check out My Skills!
+            </button>
+          </a>          
+          <!-- social btn -->
+          <div class="mt-12 mb-8 flex gap-4 items-center">
+            <p>Check out My:</p>
+            <div class="flex space-x-3">
+              <a href="#"
+                ><img src="src/icons/instagram.svg" alt="" class="w-8 h-8"
+              /></a>
+              <a href="#"
+                ><img src="src/icons/linkedIn.svg" alt="" class="w-8 h-8"
+              /></a>
+              <a href="#"
+                ><img src="src/icons/twitter.svg" alt="" class="w-8 h-8"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 order-first md:order-none flex justify-center">
+            <img src="src/img/Me.jpg" alt="Profile Image" class="rounded-full w-49 h-96 md:ml-20" />
+          </div>          
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section  id="skills" class="max-w-7xl mx-auto px-5 my-6 text-white" id="Services">
+      <div class="text-center">
+        <p class="mb-3 font-montserrat font-medium">My Skills</p>
+        <h3 class="text-primary text-3xl font-bold mb-16">What I Do</h3>
+      </div>
+      <!-- Skills cards -->
+      <div
+        class="my-16 flex flex-col md:flex-row justify-around items-center gap-12"
+      >
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="src/img/curso-de-arcgis-y-qgis.jpg"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">GIS Softwares</h5>
+          <p class="text-justify">
+            Expertise in using ArcGIS, QGIS
+          </p>
+        </div>
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="src/img/envi-software.png"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">Remote Sensing Softwares</h5>
+          <p class="text-justify">
+            Expertise in Erdas Imagine, and ENVI
+
+          </p>
+        </div>
+        <div
+          class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+        >
+          <img
+            src="src/img/images.png"
+            alt=""
+            class="w-[196px] mb-12 mx-auto"
+          />
+          <h5 class="text-center my-5 text-xl">Web Development</h5>
+          <p class="text-justify">
+            Advanced knowledge of HTML, JavaScript, CSS and Python
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Projects Section with Swiper -->
+<section class="px-5 my-32 mx-auto max-w-7xl" id="projects">
+    <div class="text-center text-white">
+      <h3 class="text-3xl font-bold mb-5">
+        Recent <span class="text-primary">Projects</span>
+      </h3>
+      <p class="mb-6 md:w-3/4 mx-auto">
+        Through my recent role as a GIS project manager, I oversaw projects across Morocco using GIS technologies. Projects include the development of the agricultural map of Souss Massa Region, study of delimitation, inventory, and characterization for the creation of pastoral and silvopastoral areas in the regions of Draa Tafilalet and Souss Massa.
+      </p>
+    </div>
+  
+    <!-- Swiper container -->
+    <div class="swiper mySwiper mt-16">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative border border-primary shadow-xl shadow-[#5dadec3b] rounded-2xl overflow-hidden">
+          <img src="src/img/casm.jpg" alt="Project 1" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <h3 class="text-2xl font-semibold">Project 1: Agricultural Map</h3>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative border border-primary shadow-xl shadow-[#5dadec3b] rounded-2xl overflow-hidden">
+          <img src="src/img/PE.jpg" alt="Project 2" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+            <h3 class="text-2xl font-semibold">Project 2: Pastoral Development</h3>
+          </div>
+        </div>
+         <!-- Slide 3 -->
+        <div class="swiper-slide relative border border-primary shadow-xl shadow-[#5dadec3b] rounded-2xl overflow-hidden">
+            <img src="src/img/Web_mapping.png" alt="Project 2" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+              <h3 class="text-2xl font-semibold">Project 3: Geoportal Development</h3>
+            </div>
+        </div>
+         <!-- Slide 4 -->
+         <div class="swiper-slide relative border border-primary shadow-xl shadow-[#5dadec3b] rounded-2xl overflow-hidden">
+            <img src="src/img/web_prj.png" alt="Project 2" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+              <h3 class="text-2xl font-semibold">Project 4 :Master's Website Development</h3>
+            </div>
+        </div> 
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-800 text-white py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+          <h4 class="text-2xl font-bold mb-3">Contact</h4>
+          <p class="mb-4">
+            Please feel free to contact me at my email address or through my LinkedIn Account below.
+          </p>
+          <div>
+            <p class="font-semibold">Email</p>
+            <a href="mailto:maryamhbab2335@gmail.com" class="text-primary hover:underline">
+              maryamhbab2335@gmail.com
+            </a>
+          </div>
+          <div class="mt-4">
+            <a href="https://www.linkedin.com/in/maryamhbab" target="_blank" class="text-primary hover:underline">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- script tags -->
+    <script src="src/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/review.js"></script>
+  </body>
+</html>
